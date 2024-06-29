@@ -11,27 +11,31 @@
         <h1>Currency Converter by Irineu Jr.</h1>
         <div class="input-group">
             <label for="amount">Amount:</label>
-            <input class="input-amount" type="number" id="amount" placeholder="Enter amount">
+            <input class="input-amount" type="number" id="amount" placeholder="Enter amount" onkeydown="
+            if(event.key === 'Enter') {
+                convertCurrency();
+            }
+            ">
         </div>
         <div class="input-group">
             <label for="from-currency">From:</label>
             <select id="from-currency">
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="GBP">GBP</option>
-                <option value="BRL">BRL</option>
-                <option value="JPY">JPY</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - Pound Sterling</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+                <option value="JPY">JPY - Japanese Yen</option>
                 <!-- Add more currencies as needed -->
             </select>
         </div>
         <div class="input-group">
             <label for="to-currency">To:</label>
             <select id="to-currency">
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="GBP">GBP</option>
-                <option value="BRL">BRL</option>
-                <option value="JPY">JPY</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - Pound Sterling</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+                <option value="JPY">JPY - Japanese Yen</option>
                 <!-- Add more currencies as needed -->
             </select>
         </div>
