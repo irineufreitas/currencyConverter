@@ -37,7 +37,7 @@ function factorial(n) {
 
 console.log(`Factorial of 5: ${factorial(5)}`);
 
-// ES6 array functions
+// ES6 array 
 const currencies = ['USD', 'EUR', 'GBP', 'BRL', 'JPY'];
 const upperCaseCurrencies = currencies.map(currency => currency.toUpperCase());
 console.log(upperCaseCurrencies);
